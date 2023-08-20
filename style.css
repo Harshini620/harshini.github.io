@@ -1,0 +1,278 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Header and navigation */
+header {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #e74c3c;
+}
+
+/* Sections */
+section {
+  padding: 40px 0;
+}
+
+/* Projects */
+.project {
+  margin-bottom: 40px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.project img {
+  max-width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.project h2 {
+  padding: 15px;
+  background-color: #3498db;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.project p {
+  padding: 15px;
+}
+
+/* Contact */
+.contact-form {
+  text-align: center;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #c0392b;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+}
+
+/* ... Previous styles ... */
+
+/* Header */
+header {
+  background: linear-gradient(to bottom, #3498db, #2980b9);
+  color: white;
+  text-align: center;
+  padding: 100px 0;
+  position: relative;
+}
+
+nav ul li a:hover {
+  color: #ecf0f1;
+}
+
+.header-content {
+  max-width: 600px;
+  margin: auto;
+}
+
+.header-content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.header-content p {
+  font-size: 1.2rem;
+}
+
+/* Projects */
+.project {
+  /* ... Previous styles ... */
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+}
+
+/* Experience */
+.experience {
+  padding: 40px 0;
+}
+
+.experience-item {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.experience-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.experience-item p {
+  color: #555;
+  font-size: 1rem;
+}
+
+.experience-item .experience-details {
+  margin-top: 15px;
+  padding: 15px;
+  background: #f1f1f1;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.experience-item:hover .experience-details {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* ... Rest of the styles ... */
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ... Previous styles ... */
+
+/* Certifications */
+#certifications {
+  padding: 40px 0;
+}
+
+.certification {
+  display: flex;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.certification-icon {
+  flex: 1;
+  background: #3498db;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.certification-icon img {
+  max-width: 80px;
+}
+
+.certification-content {
+  flex: 2;
+  padding: 15px;
+}
+
+.certification h2 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.certification p {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.certification-link {
+  display: inline-block;
+  color: #e74c3c;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.certification-link i {
+  margin-left: 5px;
+}
+
+.certification-link:hover {
+  color: #c0392b;
+}
+
+/* ... Rest of the styles ... */
+
