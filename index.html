@@ -1,25 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Your Name - Portfolio</title>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const menuIcon = document.querySelector(".menu-icon");
+  const menuList = document.querySelector(".menu-list");
+
+  menuIcon.addEventListener("click", () => {
+    menuList.classList.toggle("show-menu");
+  });
+});
+</script>
 </head>
+
 <body>
-  <header>
+<script>
+  const menuIcon = document.querySelector('.menu-icon');
+  const menuList = document.querySelector('.menu-list');
+
+  menuIcon.addEventListener('click', () => {
+    menuList.classList.toggle('show-menu');
+  });
+</script>
+
+<header class="small-header">
     <nav>
-      <ul>
+      <div class="menu-icon">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="menu-list">
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#certifications">Certifications</a></li>
+	<li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
+     <div class="profile-photo">
+      <img src="profile1.jpg" alt="Your Name">
+    </div>
     <div class="header-content">
-      <h1>HARSHINI</h1>
+      <h1>HARSHINI T</h1>
       <p>Full-Stack Developer &amp; UI Designer</p>
     </div>
   </header>
@@ -34,20 +61,38 @@
   <section id="projects">
     <div class="container">
       <h1>Projects</h1>
-      <!-- Project 1 -->
-      <div class="project">
-        <img src="Project1.jpg" alt="Project 1">
-        <h2>Online Book Store</h2>
-        <p>The Online Book Store project is an online application that allows customers to browse and purchase books available in different categories. The front-end of the project is built using HTML, CSS, JavaScript, JSON, jQuery, and Bootstrap.</p>
+        <div class="experience-item">
+         <div class="certification">
+        <div class="certification-icon">
+          <img src="art.png" alt="Project 1">
+        </div>
+        <div class="certification-content">
+          <h2>Online Art Gallery</h2>
+          <p>PHP | MySQL | JavaScript | Bootstrap | HTML5 | CSS3</p>
+          <a href="https://github.com/Harshini620/art-gallery" target="_blank" class="certification-link">Show Projects <i class="fas fa-external-link-alt"></i></a>
+        </div>
       </div>
-      <!-- Project 2 -->
-      <div class="project">
-        <img src="Project2.jpg" alt="Project 2">
-        <h2>Online Art Gallery</h2>
-        <p>The Online Art Gallery is an online web application designed to manage information related to various art works, famous artists, art types, styles, prices, orders, customers, and delivery times.</p>
+        <div class="experience-details">
+          <p>The Online Art Gallery is an online web application designed to manage information related to various art works, famous artists, art types, styles, prices, orders, customers, and delivery times.! </p>
+        </div>
       </div>
-      <!-- Add more project divs as needed -->
-    </div>
+<br><br><br><br>
+	<div class="experience-item">
+         <div class="certification">
+        <div class="certification-icon">
+          <img src="Project1.png" alt="Project 1">
+        </div>
+        <div class="certification-content">
+          <h2>Online Book Store</h2>
+          <p> JavaScript | Bootstrap | HTML5 | CSS3</p>
+          <a href="https://harshini620.github.io/book_store/" target="_blank" class="certification-link">Show Projects <i class="fas fa-external-link-alt"></i></a>
+        </div>
+      </div>
+        <div class="experience-details">
+          The Online Book Store project is an online application that allows customers to browse and purchase books available in different categories. The front-end of the project is built using HTML, CSS, JavaScript, JSON, jQuery, and Bootstrap.</p>
+        </div>
+      </div>
+      
   </section>
   
   <section id="experience">
@@ -55,8 +100,16 @@
       <h1>Experience</h1>
       <!-- Experience 1-->
       <div class="experience-item">
-        <h3>Software Developer Intern</h3>
-        <p>ITW India Pvt Ltd, Bangalore | Jun 2023 - Jul 2023</p>
+         <div class="certification">
+        <div class="certification-icon">
+          <img src="intern.png" alt="internship certificate">
+        </div>
+        <div class="certification-content">
+          <h2>Software Developer Intern</h2>
+          <p>ITW India Pvt Ltd, Bangalore</p>
+          <a href="https://drive.google.com/file/d/1VLYnUpTuBN5-1xnhL5fds_IBwE6fyVWj/view " target="_blank" class="certification-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
+        </div>
+      </div>
         <div class="experience-details">
           <p>Thrilled to begin my journey as a Software Developer Intern at BISS R&D, focusing on Application Development! 💼👩‍💻 Excited to learn and contribute to innovative projects that make a real-world impact. Grateful for this opportunity to grow and thrive in a dynamic tech environment! </p>
         </div>
@@ -81,7 +134,7 @@
       <!-- Add more certification divs as needed -->
       <div class="certification">
         <div class="certification-icon">
-          <img src="C2.jpeg" alt="Certificate Icon">
+          <img src="C2.jpg" alt="Certificate Icon">
         </div>
         <div class="certification-content">
           <h2>IBM : SQL- A Practical Introduction for Querying Databases</h2>
@@ -89,15 +142,102 @@
           <a href="https://coursera.org/share/0d7883c0b4bd435881d1b8c90d82b04f" target="_blank" class="certification-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
         </div>
       </div>
+      <div class="certification">
+        <div class="certification-icon">
+          <img src="C3.jpg" alt="Certificate Icon">
+        </div>
+        <div class="certification-content">
+          <h2>Meta - Programming in JavaScript</h2>
+          <p>Provider: Meta</p>
+          <a href="https://coursera.org/share/e51a1003efbd0b7182aca531e7ebf6f0" target="_blank" class="certification-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
+        </div>
+      </div>
     </div>
   </section>
-  
-  <section id="contact">
-    <div class="container">
-      <h1>Contact Me</h1>
-      <p>Feel free to reach out to me at <a href="mailto:your@email.com">harshinitamil06@gmail.com | www.linkedin.com/in/harshinit620    </a>.</p>
+  <section id="skills">
+<h1 style="text-align=right;">&nbsp; Skills</h1>
+  <div class="skill-container">
+    <div class="skill-card">
+     <i class="fab fa-python"></i>
+      <h3>Python</h3>
     </div>
-  </section>
+    <div class="skill-card">
+      <i class="fa-brands fa-react"></i>
+      <h3>React.js</h3>
+    </div>  
+    <div class="skill-card">
+      <i class="fa-brands fa-js"></i>
+      <h3>JavaScript</h3>
+    </div>
+    <div class="skill-card">
+      <i class="fa-brands fa-bootstrap"></i>
+      <h3>Bootstrap</h3>
+    </div>
+    <div class="skill-card">
+      <i class="fa-brands fa-php"></i>
+      <h3>PHP</h3>
+    </div>
+    <div class="skill-card">
+      <i class="fa-brands fa-html5"></i>
+      <h3>Html5</h3>
+    </div>
+    <div class="skill-card">
+      <i class="fa-brands fa-css3-alt"></i>
+      <h3>CSS3</h3>
+    </div>
+    <div class="skill-card">
+      <i class="fas fa-code"></i>
+      <h3>.net</h3>
+    </div>
+    <div class="skill-card">
+      <i class="fas fa-code"></i>
+      <h3>SQL</h3>
+    </div>
+    <div class="skill-card">
+      <i class="fa-brands fa-laravel"></i>
+      <h3>Laravel</h3>
+    </div>
+
+    <!-- Add more skill cards as needed -->
+  </div>
+</section>
+
+ <section id="contact">
+  <div class="container">
+    <h1>Contact Me</h1>
+    <div class="contact-info">
+      <div class="contact-item">
+        <a href="mailto:harshinitamil06@gmail.com">
+          <i class="fas fa-envelope"></i>
+          harshinitamil06@gmail.com
+        </a>
+      </div>
+      <div class="contact-item">
+        <a href="https://www.linkedin.com/in/harshinit620">
+          <i class="fab fa-linkedin"></i>
+          harshinit620
+        </a>
+      </div>
+      <div class="contact-item">
+        <a href="https://github.com/Harshini620">
+          <i class="fab fa-github"></i>
+          Harshini620
+        </a>
+      </div>
+      <div class="contact-item">
+        <a href="https://leetcode.com/HarshiniT/">
+          <i class="fa-solid fa-code"></i>
+          HarshiniT
+        </a>
+      </div>
+      <div class="contact-item">
+        <i class="fas fa-phone"></i>
+        +91 9790150633
+      </div>
+    </div>
+  </div>
+</section>
+
   
   <footer>
     <p>&copy; 2023 Harshini. All rights reserved.</p>
